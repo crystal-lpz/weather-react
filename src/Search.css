@@ -1,6 +1,6 @@
 .container {
   background-color: rgba(216, 216, 216, 0.178);
-  width: 769px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 40px;
   border-radius: 30px;
@@ -9,12 +9,12 @@
 
 .container li {
   list-style: none;
-  text-align: left;
+  text-align: center;
 }
 
 .temp {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -24,7 +24,8 @@
 }
 
 span {
-  text-align: right;
+  margin-top: 50px;
+  text-align: center;
   line-height: 10px;
   text-transform: capitalize;
 }
