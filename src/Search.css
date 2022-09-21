@@ -1,0 +1,30 @@
+.container {
+  background-color: rgba(216, 216, 216, 0.178);
+  width: 769px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 10px 5px 25px gray;
+}
+
+.container li {
+  list-style: none;
+  text-align: left;
+}
+
+.temp {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.icon {
+  background-color: rgba(213, 218, 219, 0.459);
+  border-radius: 50px;
+}
+
+span {
+  text-align: right;
+  line-height: 10px;
+  text-transform: capitalize;
+}
