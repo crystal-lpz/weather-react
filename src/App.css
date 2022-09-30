@@ -1,3 +1,5 @@
 .App {
+  max-width: 690px;
   text-align: center;
+  margin: auto;
 }

@@ -19,21 +19,26 @@ export default function WeatherTmperture(props) {
   if (unit === "celsius") {
     return (
       <div className="temperature">
-        {Math.round(props.celsius)}°C|
-        <a href="/" onClick={showFahrenheit}>
-          {" "}
-          F°
-        </a>
+        {Math.round(props.celsius)}
+        <span>
+          °C |
+          <a href="/" onClick={showFahrenheit}>
+            {" "}
+            F°
+          </a>
+        </span>
       </div>
     );
   } else {
     return (
       <div className="temperature">
-        {Math.round(Fahrenheit())}{" "}
-        <a href="/" onClick={showCelsius}>
-          °C |
-        </a>{" "}
-        F°
+        {Math.round(Fahrenheit())}
+        <span>
+          <a href="/" onClick={showCelsius}>
+            °C |
+          </a>{" "}
+          F°
+        </span>
       </div>
     );
   }

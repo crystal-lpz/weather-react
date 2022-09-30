@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherTemperature from "./WeatherTemperature";
-// import WeatherIcon from "./weatherIcons";
+import Time from "./TimeStamp";
 export default function WeatherInfo(props) {
   return (
     <div className="weatherInfo ">
@@ -13,23 +13,24 @@ export default function WeatherInfo(props) {
                 alt={props.data.description}
                 className="icon"
               />
-
-              {/* <WeatherIcon code={props.data.icon} size={60} /> */}
             </div>
 
-            <div className="col-4">
+            <div className="col-4 ">
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
 
-            <div className="col-4">
+            <div className="col-4 ">
               <ul>
                 <li>Humidity:{props.data.humidity}%</li>
                 <li>Wind:{Math.round(props.data.wind)}km/h</li>
               </ul>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 CityInfo">
             <h2>{props.data.name}</h2>
+            <div className="time">
+              <Time date={props.data.date} />
+            </div>
             <h3>{props.data.description}</h3>
           </div>
         </div>

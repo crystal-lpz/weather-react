@@ -16,6 +16,7 @@ export default function Search(props) {
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
     });
   }
   function handleSubmit(event) {
@@ -37,7 +38,7 @@ export default function Search(props) {
       <div className="weather">
         <h1>Weather Search Engine</h1>
         <form onSubmit={handleSubmit}>
-          <div className="row mb-9">
+          <div className="row">
             <div className="col-9">
               <input
                 type="search"
