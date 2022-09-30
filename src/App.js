@@ -1,11 +1,10 @@
-import "./App.css";
 import Search from "./Search";
+import "./Search.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather Search Engine</h1>
-      <Search />
+      <Search defaultCity="Sydney" />
       <p>
         <a
           href="https://github.com/crystal-lpz/weather-react.git"
