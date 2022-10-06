@@ -1,0 +1,51 @@
+.weatherInfo h2 {
+  font-size: 30px;
+  line-height: 26px;
+}
+.weatherInfo h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+.weatherInfo ul {
+  margin-top: 8px;
+}
+.weatherInfo li {
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
+}
+.weatherInfo .temperature {
+  font-size: 48px;
+}
+
+/* city description */
+.weatherInfo .CityInfo {
+  line-height: 16px;
+  padding-left: 9px;
+  padding-top: 6px;
+  text-align: right;
+}
+.weatherInfo.time {
+  font-size: 16px;
+  line-height: 20px;
+}
+/* units */
+.weatherInfo span {
+  color: #202124;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+  padding-left: 6px;
+  vertical-align: top;
+}
+
+.weatherInfo a {
+  text-decoration: none;
+}
+.weatherInfo .Icon {
+  margin: 10px;
+}

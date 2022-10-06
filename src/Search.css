@@ -1,63 +1,18 @@
-.weather h1 {
-  text-align: center;
-}
-.weather h2 {
-  font-size: 30px;
-  line-height: 26px;
-}
-.weather h3 {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 20px;
-}
 .weather form {
   border: none;
   padding: 15px 20px;
   display: inline-block;
   border-radius: 6px;
 }
-
-.weather .time {
-  font-size: 16px;
-  line-height: 20px;
-}
-.weather .CityInfo {
-  line-height: 16px;
-  padding-left: 9px;
-  padding-top: 6px;
-  text-align: right;
-}
-.weather span {
-  color: #202124;
-  display: inline-block;
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 10px;
-  padding-left: 6px;
-  vertical-align: top;
-}
-
-.weather a {
-  text-decoration: none;
+.weather h1 {
+  text-align: center;
 }
 .App p {
   text-align: center;
 }
-.temperature {
-  font-size: 48px;
-}
+
 .container {
-  background-color: rgba(58, 43, 43, 0.123);
+  border: 2px solid rgba(0, 0, 0, 0.308);
   padding: 7px;
-  border-radius: 4px;
-}
-.weather ul {
-  margin-top: 8px;
-}
-.weather li {
-  list-style: none;
-  text-align: left;
-  font-size: 14px;
-  margin: 0;
+  border-radius: 5px;
 }

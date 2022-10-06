@@ -24,7 +24,7 @@ export default function WeatherTmperture(props) {
           °C |
           <a href="/" onClick={showFahrenheit}>
             {" "}
-            F°
+            °F
           </a>
         </span>
       </div>
@@ -37,7 +37,7 @@ export default function WeatherTmperture(props) {
           <a href="/" onClick={showCelsius}>
             °C |
           </a>{" "}
-          F°
+          °F
         </span>
       </div>
     );

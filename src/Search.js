@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForcast";
 
 export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -14,9 +15,12 @@ export default function Search(props) {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
+      max: response.data.main.temp_max,
+      min: response.data.main.temp_min,
     });
   }
   function handleSubmit(event) {
@@ -52,7 +56,10 @@ export default function Search(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData} />
+        <div className="container">
+          <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {
